@@ -26,10 +26,10 @@ class PengeluaranItem extends StatelessWidget {
                 const Spacer(),
                 Row(
                   children: [
-                    const Icon(Icons.alarm),
+                    Icon(iconKategori[barang.kategori]),
                     const SizedBox(width: 8),
                     Text(
-                      barang.waktu.toString(),
+                      barang.formattedDate,
                     ),
                   ],
                 ),
